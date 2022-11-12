@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI LIbrary</title>
+  <style>
+    body{ 
+      font-size: 1.5em
+    }
+    .container{
+      margin: 40px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt minus ex animi, hic quasi vel consectetur ipsam quos at veniam? Placeat quam <span class="tooltip" data-content="I'am a tooltip!!">quaerat asperiores deserunt</span> facilis molestias magni est numquam.</p>
+
+    <h2>Services</h2>
+    <div class="dropdown">
+      <div class="trigger">Reveal</div>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vitae, vel saepe accusantium nihil ab.</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="trigger">Service 2</div>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vitae, vel saepe accusantium nihil ab.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>More Information</h2>
+  <div class="tabs">
+    <ul>
+      <li class="trigger active" data-target="about">About</li>
+      <li class="trigger" data-target="delivery">Delivery Info</li>
+      <li class="trigger" data-target="returns">Returns Info</li>
+    </ul>
+    <div class="content active" id="about">
+      <h3>About</h3>
+      <p>About Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quos quasi sit quae. Possimus magnam suscipit alias, nisi doloribus eos.</p>
+    </div>
+    <div class="content" id="delivery">
+      <h3>Delivery Info</h3>
+      <p>Delivery Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quos quasi sit quae. Possimus magnam suscipit alias, nisi doloribus eos.</p>
+    </div>
+    <div class="content" id="returns">
+      <h3>Returns Info</h3>
+      <p>Returns Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quos quasi sit quae. Possimus magnam suscipit alias, nisi doloribus eos.</p>
+    </div> 
+    <button class="snackbar-trigger">click me</button>
+  </div>
+  <script src="assets/bundle.js"></script>
+</body>
+</html>
